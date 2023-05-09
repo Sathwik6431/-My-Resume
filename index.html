@@ -2,115 +2,119 @@
 <html>
 <head>
 	<title>My Resume</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		h1, h2, h3 {
+			font-weight: bold;
+			margin: 0 0 10px;
+		}
+		h1 {
+			font-size: 30px;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		ul {
+			margin: 0 0 10px;
+			padding: 0;
+			list-style: none;
+		}
+		ul li {
+			margin-bottom: 5px;
+		}
+		.section-header {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+		}
+		.section-content {
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: 600px) {
+			h1 {
+				font-size: 24px;
+			}
+			h2 {
+				font-size: 20px;
+			}
+			h3 {
+				font-size: 18px;
+			}
+		}
+	</style>
 </head>
 <body>
-	<header>
-		<h1>My Resume</h1>
-	</header>
-	<main>
-		<section id="personal-info">
-			<h2>Personal Information</h2>
+	<div class="container">
+		<h1>John Doe</h1>
+		<h2>Web Developer</h2>
+		<ul>
+			<li>Email: john.doe@email.com</li>
+			<li>Phone: (123) 456-7890</li>
+			<li>Location: New York, NY</li>
+		</ul>
+		
+		<div class="section-header">
+			<h3>Summary</h3>
+		</div>
+		<div class="section-content">
+			<p>Experienced web developer with expertise in HTML, CSS, JavaScript, and PHP. Skilled in developing responsive websites and web applications. Proficient in WordPress and Shopify.</p>
+		</div>
+		
+		<div class="section-header">
+			<h3>Experience</h3>
+		</div>
+		<div class="section-content">
+			<h4>Web Developer - ABC Company</h4>
+			<p>Developed and maintained company website using HTML, CSS, and JavaScript. Implemented responsive design and optimized website for search engines. Managed website content using WordPress CMS.</p>
+			<h4>Web Developer - XYZ Company</h4>
+			<p>Developed e-commerce website using Shopify. Customized website theme and implemented payment gateway integration. Improved website performance and load times through optimization techniques.</p>
+		</div>
+		
+		<div class="section-header">
+			<h3>Skills</h3>
+		</div>
+		<div class="section-content">
 			<ul>
-				<li><strong>Name:</strong> John Doe</li>
-				<li><strong>Email:</strong> john.doe@email.com</li>
-				<li><strong>Phone:</strong> 123-456-7890</li>
-				<li><strong>Location:</strong> Anytown, USA</li>
-			</ul>
-		</section>
-		<section id="education">
-			<h2>Education</h2>
-			<ul>
-				<li><strong>Bachelor of Science in Computer Science</strong></li>
-				<li>XYZ University</li>
-				<li>Graduated May 2022</li>
-			</ul>
-		</section>
-		<section id="experience">
-			<h2>Work Experience</h2>
-			<ul>
-				<li>
-					<strong>Software Engineer Intern</strong><br>
-					ABC Company<br>
-					Summer 2021<br>
-					<ul>
-						<li>Assisted with the development of a new web application using React</li>
-						<li>Collaborated with team members to identify and solve technical issues</li>
-							<li>Implemented unit tests and contributed to code reviews</li>
-					</ul>
-				</li>
-				<li>
-					<strong>Teaching Assistant</strong><br>
-					XYZ University<br>
-					Spring 2021<br>
-					<ul>
-						<li>Taught weekly labs and provided one-on-one assistance to students</li>
-						<li>Graded assignments and provided feedback to students</li>
-						<li>Assisted the professor with course material preparation</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Java</li>
-				<li>Python</li>
-				<li>C++</li>
-				<li>JavaScript</li>
-				<li>React</li>
-				<li>SQL</li>
-				<li>Git</li>
-			</ul>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; John Doe 2023. All rights reserved.</p>
-	</footer>
-</body>
-</html>
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
+				<li>HTML</li>
+							<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PHP</li>
+			<li>WordPress</li>
+			<li>Shopify</li>
+			<li>Responsive design</li>
+			<li>Search engine optimization</li>
+		</ul>
+	</div>
+	
+	<div class="section-header">
+		<h3>Education</h3>
+	</div>
+	<div class="section-content">
+		<h4>Bachelor of Science in Computer Science</h4>
+		<p>New York University, New York, NY</p>
+		<p>Graduated: May 2015</p>
+	</div>
+</div>
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-}
-
-h1, h2 {
-	margin: 0;
-}
-
-main {
-	padding: 20px;
-}
-
-section {
-	margin-bottom: 30px;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	margin-bottom: 10px;
-}
-
-strong {
-	font-weight: bold;
-}
-
-footer {
-	background-color: #ccc;
-	padding: 10px;
-	text-align: center;
-}
-
-@media
+				
