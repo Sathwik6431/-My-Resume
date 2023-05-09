@@ -4,7 +4,7 @@
 	<title>Bandaru Sai Sathwik - Resume</title>
 	<style>
 		body {
-			font-family: Arial, sans-serif;
+			font-family: "Montserrat", sans-serif;
 			font-size: 16px;
 			line-height: 1.5;
 			margin: 0;
@@ -18,30 +18,41 @@
 		h1 {
 			margin-top: 0;
 			margin-bottom: 10px;
-			font-size: 32px;
+			font-size: 48px;
 			font-weight: bold;
+			color: #333;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-align: center;
 		}
 		h2 {
 			margin-top: 0;
 			margin-bottom: 10px;
-			font-size: 24px;
+			font-size: 32px;
 			font-weight: bold;
+			color: #333;
 		}
 		h3 {
 			margin-top: 0;
 			margin-bottom: 10px;
-			font-size: 20px;
+			font-size: 24px;
 			font-weight: bold;
+			color: #333;
 		}
 		h4 {
 			margin-top: 0;
 			margin-bottom: 10px;
-			font-size: 16px;
+			font-size: 20px;
 			font-weight: bold;
+			color: #333;
 		}
 		p {
 			margin-top: 0;
 			margin-bottom: 10px;
+			color: #555;
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: justify;
 		}
 		ul {
 			margin-top: 0;
@@ -56,72 +67,145 @@
 		}
 		.summary {
 			margin-bottom: 30px;
+			border-top: 2px solid #333;
+			padding-top: 20px;
 		}
-	</style>
+		.summary p {
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 20px;
+		}
+		.summary p:last-child {
+			margin-bottom: 0;
+		}
+		.work-experience {
+			padding-top: 30px;
+			border-top: 2px solid #333;
+		}
+		.work-experience .section-content {
+			position: relative;
+		}
+		.work-experience .section-content:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -25px;
+			height: 100%;
+			width: 2px;
+			background-color: #333;
+		}
+		.work-experience .section-content h4 {
+			position: relative;
+			padding-left: 30px;
+		}
+		.work-experience .section-content h4:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -25px;
+			height: 20px;
+			width: 20px;
+			background-color: #333;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		.education {
+			padding-top: 30px;
+			border-top: 2px solid #333;
+		}
+		.skills {
+			padding-top: 30px;
+				border-top: 2px solid #333;
+	}
+	.skills ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.skills ul li {
+		margin-right: 20px;
+		margin-bottom: 10px;
+		padding: 8px 16px;
+		background-color: #eee;
+		border-radius: 20px;
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	.skills ul li:last-child {
+		margin-right: 0;
+	}
+</style>
 </head>
 <body>
 	<div class="container">
 		<header>
 			<h1>Bandaru Sai Sathwik</h1>
-			<p>sathwikgoud6431@gmail.com | 555-555-5555 | 123 Main St, Anytown USA</p>
+			<p>sathwikgoud6431@gmail.com</p>
 		</header>
-		
-		<div class="summary">
-			<h2>Summary</h2>
-			<p>Highly motivated and dedicated computer science graduate with experience in Java, Python, HTML, and CSS. Strong problem-solving skills and attention to detail. Seeking a challenging position in software development.</p>
-		</div>
-		
+			<div class="summary">
+		<p>Summary</p>
+		<p>Highly motivated computer science graduate with strong technical and communication skills. Passionate about learning and applying new technologies to solve complex problems.</p>
+	</div>
+
+	<div class="work-experience">
 		<div class="section-header">
 			<h3>Work Experience</h3>
 		</div>
 		<div class="section-content">
-			<h4>Software Developer</h4>
+			<h4>Software Development Intern</h4>
 			<p>ABC Company, Anytown USA</p>
-			<p>June 2021 - Present</p>
+			<p>May 2020 - August 2020</p>
 			<ul>
-				<li>Developed and maintained Java applications for internal use</li>
-				<li>Collaborated with team members to identify and resolve software issues</li>
-				<li>Participated in code reviews to ensure high-quality code</li>
+				<li>Collaborated with team members to develop and test new software features</li>
+				<li>Assisted in troubleshooting and bug fixing</li>
+				<li>Contributed to documentation and user manuals</li>
 			</ul>
 		</div>
-		<div class="section-content">
-			<h4>Web Developer Intern</h4>
-			<p>XYZ Agency, Anytown USA</p>
-			<p>January 2021 - May 2021</p>
-			<ul>
-				<li>Assisted in the development and maintenance of client websites</li>
-				<li>Updated website content using HTML and CSS</li>
-				<li>Tested websites for compatibility with various browsers and devices</li>
-			</ul>
-		</div>
-		
+	</div>
+
+	<div class="education">
 		<div class="section-header">
 			<h3>Education</h3>
-	</div>
-	<div class="section-content">
-		<h4>Bachelor of Science in Computer Science</h4>
-		<p>XYZ University, Anytown USA</p>
-		<p>Graduated May 2021</p>
-		<p>GPA: 8.0</p>
+		</div>
+		<div class="section-content">
+			<h4>Bachelor of Science in Computer Science</h4>
+			<p>XYZ University, Anytown USA</p>
+			<p>Graduated May 2021</p>
+			<p>GPA: 3.5</p>
+		</div>
 	</div>
 	
-	<div class="section-header">
-		<h3>Skills</h3>
-	</div>
-	<div class="section-content">
-		<h4>Technical Skills</h4>
-		<ul>
-			<li>Java</li>
-			<li>Python</li>
-			<li>HTML</li>
-			<li>CSS</li>
-		</ul>
-		<h4>Soft Skills</h4>
-		<ul>
-			<li>Teamwork</li>
-			<li>Communication</li>
-			<li>Problem-solving</li>
-			<li>Attention to detail</li>
-		</ul>
+	<div class="skills">
+		<div class="section-header">
+			<h3>Skills</h3>
+		</div>
+		<div class="section-content">
+			<h4>Technical Skills</h4>
+			<ul>
+				<li>Java</li>
+				<li>Python</li>
+				<li>HTML</li>
+				<li>CSS</li>
+			</ul>
+			<h4>Soft Skills</h4>
+			<ul>
+				<li>Teamwork</li>
+				<li>Communication</li>
+				<li>Problem-solving</li>
+				<li>Attention to detail</li>
+			</ul>
+		</div>
 	</div>
 </div>
+</body>
+</html>
